@@ -1,7 +1,9 @@
-package GraphAdjacencyMatrix;
+package GraphAdjacencyList;
+
 import java.util.ArrayList;
 
 class Main {
+
     public static void main(String[] args) {
         ArrayList<GraphNode> nodeList = new ArrayList<GraphNode>();
         nodeList.add(new GraphNode("A", 0));
