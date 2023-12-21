@@ -33,4 +33,29 @@ public class Graph {
         }
         return s.toString();
     }
+
+    void bfsVisit(GraphNode node){
+        LinkedList<GraphNode> queue = new LinkedList<GraphNode>();
+        queue.add(node);
+        while(!queue.isEmpty()){
+            GraphNode currentNode = queue.remove(0);
+            currentNode.isVisited = true;
+            System.out.print(currentNode.name + " ");
+            for(GraphNode neighbor : currentNode.neighbors){
+                if(!neighbor.isVisited){
+                    queue.add(neighbor);
+                    neighbor.isVisited = true;
+                }
+            }
+        }
+    }
+
+    void bfs(){
+        for(GraphNode node : nodeList){
+            if(!node.isVisited){
+                bfsVisit(node);
+            }
+        }
+    }
+
 }
