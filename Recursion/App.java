@@ -11,6 +11,9 @@ public class App {
 
         Fibonacci fibh = new Fibonacci();
         System.out.println(fibh.tail(5, 0, 1));
+
+        TowersofHanoi t1 = new TowersofHanoi();
+        t1.solve(2, 'A', 'B', 'C');
     }
     
 }
