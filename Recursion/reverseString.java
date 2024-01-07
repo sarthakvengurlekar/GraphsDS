@@ -6,7 +6,7 @@ public class reverseString {
         if(s.equals("")){
             return s;
         }
-        return s.substring(1) + s.charAt(0);
+        return reverse(s.substring(1)) + s.charAt(0);
     }
     
 }
