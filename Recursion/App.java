@@ -14,6 +14,10 @@ public class App {
 
         TowersofHanoi t1 = new TowersofHanoi();
         t1.solve(2, 'A', 'B', 'C');
+
+        reverseString s = new reverseString();
+        System.out.println(s.reverse("Hellooooze"));
+        
     }
     
 }
