@@ -21,6 +21,11 @@ public class App {
         GCD x = new GCD();
         System.out.println(x.getGCD(24, 9));
         System.out.println(x.getGCD_iteration(24, 60));
+
+        int[] nums = {4, 5, 7, 11, 90, 2, 55, 21};
+        LinearSearchh l = new LinearSearchh();
+        System.out.println(l.find(nums, 90));
+        System.out.println(l.recursive_search(nums, 11, 0));
         
     }
     
