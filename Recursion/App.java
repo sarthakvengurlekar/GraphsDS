@@ -26,6 +26,10 @@ public class App {
         LinearSearchh l = new LinearSearchh();
         System.out.println(l.find(nums, 90));
         System.out.println(l.recursive_search(nums, 11, 0));
+
+        int[] n = {1, 3, 4, 6, 8, 12, 44};
+        BinarySearch ser = new BinarySearch();
+        System.out.println(ser.look(n, 8, 0, n.length - 1));
         
     }
     
