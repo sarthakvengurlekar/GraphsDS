@@ -17,6 +17,10 @@ public class App {
 
         reverseString s = new reverseString();
         System.out.println(s.reverse("Hellooooze"));
+
+        GCD x = new GCD();
+        System.out.println(x.getGCD(24, 9));
+        System.out.println(x.getGCD_iteration(24, 60));
         
     }
     
